@@ -1,0 +1,31 @@
+{
+  "name": "조경 ERP - 통합 경영관리",
+  "short_name": "조경 ERP",
+  "description": "조경회사 통합 경영관리 시스템 - 현장 일지, 원가관리, 수금관리",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#16a34a",
+  "orientation": "portrait-primary",
+  "lang": "ko",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/share-receive",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "categories": ["business", "productivity"],
+  "screenshots": []
+}
