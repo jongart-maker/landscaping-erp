@@ -216,11 +216,11 @@ export default function Dashboard() {
           <h3 className="text-base font-semibold text-gray-800 mb-4 flex items-center gap-2">
             <span className="text-orange-500">⏰</span> 처리기한 임박 하자
           </h3>
-          {data.upcomingDefects.length === 0 ? (
+          {(data.upcomingDefects || []).length === 0 ? (
             <p className="text-sm text-gray-400 text-center py-4">임박한 하자 처리기한이 없습니다</p>
           ) : (
             <div className="space-y-2">
-              {data.upcomingDefects.map((d, i) => {
+              {(data.upcomingDefects || []).map((d, i) => {
                 const daysLeft = Math.ceil(d.days_until_due);
                 return (
                   <div key={i} className={`flex items-center justify-between p-3 rounded-lg border ${
