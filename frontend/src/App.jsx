@@ -14,7 +14,7 @@ import ShareReceive from './pages/ShareReceive';
 import InstallGuide from './pages/InstallGuide';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://landscaping-erp-api.jji8321.workers.dev';
 axios.defaults.baseURL = API_URL;
 
 const menuItems = [

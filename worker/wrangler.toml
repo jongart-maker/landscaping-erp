@@ -1,0 +1,12 @@
+name = "landscaping-erp-api"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ALLOWED_ORIGINS = "https://landscaping-erp-jzh6.vercel.app"
+
+# 아래는 wrangler secret으로 별도 설정:
+#   wrangler secret put SUPABASE_URL   (e.g. https://gwhbmumcqnkjbjieoqxo.supabase.co)
+#   wrangler secret put SUPABASE_KEY   (service_role key)
+#   wrangler secret put ANTHROPIC_API_KEY
